@@ -7,26 +7,31 @@ const config = require('./config/config')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    show: false
+    show: false,
+    titleBarOverlay: true,
+    webPreferences: {
+      webviewTag: true,
+      nodeIntegration: true,
+      allowRunningInsecureContent: true,
+      webSecurity: false,
+      preload: path.join(__dirname, 'preload.js')
+    },
+    autoHideMenuBar: true
   })
+
+  // and load the index.html of the app.
+  mainWindow.loadFile('index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
-  if(config.title) {
-    document.getElementsByTagName('title')[0].textContent = config.title   
-  }
-
-  if(config.url) {
-    mainWindow.loadURL(config.url);
-  }
-
   if(config.isFullScreen) {
     mainWindow.maximize()
   } else {
-    const width = config.width || 800;
-    const height = config.height || 800;
+    const width = Number(config.width) || 800;
+    const height = Number(config.height) || 600;
     mainWindow.setSize(width, height)
+    mainWindow.show()
   }
 }
 

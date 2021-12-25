@@ -1,8 +1,8 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const { app, BrowserWindow } = require('electron')
 const path = require('path')
-const env = process.env.NODE_ENV || 'development'
 const config = require('./config/config')
+const env = process.env.NODE_ENV || 'development'
 
 function createWindow () {
   // Create the browser window.

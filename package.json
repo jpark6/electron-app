@@ -33,7 +33,7 @@
     "asar": true,
     "mac": {
       "target": [
-        "default" 
+        "default"
       ],
       "icon": "asset/icons/mac/icon.icns"
     },

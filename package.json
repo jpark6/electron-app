@@ -1,10 +1,10 @@
 {
-  "name": "electron-app",
+  "name": "youtube-election-app",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "set NODE_ENV=development&&electron ."
   },
   "repository": "https://github.com/jpark6/electron-app",
   "keywords": [
@@ -14,9 +14,11 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "JPark6",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^16.0.5"
+    "electron": "^16.0.5",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-reloader": "^1.2.1"
   }
 }

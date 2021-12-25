@@ -9,14 +9,15 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     show: false,
     titleBarOverlay: true,
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
+    autoHideMenuBar: true,
     webPreferences: {
       webviewTag: true,
       nodeIntegration: true,
       allowRunningInsecureContent: true,
       webSecurity: false,
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
     },
-    autoHideMenuBar: true
   })
 
   // and load the index.html of the app.
@@ -57,11 +58,3 @@ app.on('window-all-closed', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-
-// Development Hot Reload
-if (env === 'development') {
-  require('electron-reload')(__dirname,
-    { electron: path.join(__dirname, 'node_modules', '.bin', 'electron'),
-    hardResetMethod: 'exit'
-  });
-}

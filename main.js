@@ -3,12 +3,15 @@ const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const config = require('./config/config')
 const env = process.env.NODE_ENV || 'development'
-
+  
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     show: false,
-    titleBarOverlay: true,
+    //titleBarOverlay: true,
+    // titleBarStyle: 'hidden',
+    darkTheme: true,
+    //frame: false,
     icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
     autoHideMenuBar: true,
     webPreferences: {

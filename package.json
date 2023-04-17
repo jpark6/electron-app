@@ -1,5 +1,5 @@
 {
-  "name": "youtube-election-app",
+  "name": "election-app",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
@@ -54,9 +54,9 @@
       "perMachine": true,
       "language": 1042,
       "installerIcon": "asset/icons/win/icon.ico",
-      "shortcutName": "YT",
-      "artifactName": "YT-${version}.${ext}",
-      "uninstallDisplayName": "YT"
+      "shortcutName": "Slack",
+      "artifactName": "Slack-${version}.${ext}",
+      "uninstallDisplayName": "Slack"
     },
     "directories": {
       "buildResources": "./build/",

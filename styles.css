@@ -1,11 +1,16 @@
 /* styles.css */
 
+:root {
+  color-scheme: light dark;
+}
+
 /* Add styles here to customize the appearance of your app */
 body {
   padding: 0;
   display: flex;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 #webviewWrapper {
   position: relative;

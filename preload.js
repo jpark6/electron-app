@@ -13,9 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
     webview.id = 'webview'
     webview.setAttribute('src', config.url)
     webview.setAttribute('autosize', 'on')
-    setTimeout(() =>{
-      document.getElementById("webviewWrapper").appendChild(webview)
-      document.getElementById("loading-content").remove();
-    }, 1500)
+    document.getElementById("webviewWrapper").appendChild(webview)
   }
 })

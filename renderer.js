@@ -4,3 +4,10 @@
 // `nodeIntegration` is turned off. Use `preload.js` to
 // selectively enable features needed in the rendering
 // process.
+(() => {
+  window.onload = () => {
+    setTimeout(() =>{
+      document.getElementById("loading-container").remove();
+    }, 2000)
+  }
+})();

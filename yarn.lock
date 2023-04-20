@@ -1245,7 +1245,11 @@ electron-reload@^2.0.0-alpha.1:
   dependencies:
     chokidar "^3.5.2"
 
+<<<<<<< HEAD
 electron-reloader@^1.2.1:
+=======
+electron-reloader@^1.2.3:
+>>>>>>> origin/dependabot/npm_and_yarn/electron-reloader-1.2.3
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/electron-reloader/-/electron-reloader-1.2.3.tgz#7e9233ba86f7dfbf1a15e6f57537ad0370fadc5a"
   integrity sha512-aDnACAzNg0QvQhzw7LYOx/nVS10mEtbuG6M0QQvNQcLnJEwFs6is+EGRCnM+KQlQ4KcTbdwnt07nd7ZjHpY4iw==

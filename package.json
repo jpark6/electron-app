@@ -21,8 +21,8 @@
   "author": "JPark6",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^16.0.6",
-    "electron-builder": "^23.1.0",
+    "electron": "^19.0.8",
+    "electron-builder": "^22.14.5",
     "electron-icon-maker": "^0.0.5",
     "electron-reload": "^2.0.0-alpha.1",
     "electron-reloader": "^1.2.3"

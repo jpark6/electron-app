@@ -3,9 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        style-src-elem 'self' https://fonts.googleapis.com;
+        font-src https://fonts.gstatic.com;
+    ">
+
     <link href="./styles.css" rel="stylesheet">
-    <title>Electron App</title>
+    <title>Slack RaonSecure</title>
   </head>
   <body>
     <div id="loading-container" class="loading-container">

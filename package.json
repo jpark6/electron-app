@@ -30,7 +30,7 @@
     "electron-icon-maker": "^0.0.5",
     "electron-reload": "^2.0.0-alpha.1",
     "electron-reloader": "^1.2.3",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "build": {
     "appId": "app.jpark",

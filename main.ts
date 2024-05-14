@@ -2,25 +2,29 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'path';
 import { Config } from './config/Config';
-import _config from "./config/config.json";
+import _config from './config/config.json';
 const env = process.env.NODE_ENV || 'development';
 const config = _config as Config;
-function createWindow () {
+
+/**
+ * create Window
+ */
+const createWindow = ()  => {
 
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    show: false,
+    //show: false,
     titleBarOverlay: true,
-    //titleBarStyle: 'hidden',
+    titleBarStyle: 'hidden',
     darkTheme: true,
-    //frame: false,
     icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
-    //autoHideMenuBar: true,
+    autoHideMenuBar: true,
     webPreferences: {
       webviewTag: true,
       nodeIntegration: true,
       allowRunningInsecureContent: true,
       webSecurity: false,
+      sandbox: false,
       preload: path.join(__dirname, 'preload.js'),
     },
   })

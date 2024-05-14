@@ -1,5 +1,5 @@
 {
-  "name": "election-app",
+  "name": "youtube-music",
   "version": "1.1.0",
   "description": "A minimal Electron application",
   "main": "tsbuild/main.js",
@@ -58,9 +58,9 @@
       "perMachine": true,
       "language": 1042,
       "installerIcon": "asset/icons/win/icon.ico",
-      "shortcutName": "Slack",
-      "artifactName": "Slack-${version}.${ext}",
-      "uninstallDisplayName": "Slack"
+      "shortcutName": "YoutubeMusic",
+      "artifactName": "YoutubeMusic-${version}.${ext}",
+      "uninstallDisplayName": "YoutubeMusic"
     },
     "directories": {
       "buildResources": "./build/",
